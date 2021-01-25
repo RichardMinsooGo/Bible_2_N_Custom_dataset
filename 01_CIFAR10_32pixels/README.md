@@ -22,6 +22,8 @@ python 3_cifar100_datasets_from_directory.py
 
 https://drive.google.com/drive/folders/1jm7hM4s0GRgglhdpD6U38R6kULrIuM13?usp=sharing
 
+https://github.com/YoongiKim/CIFAR-10-images
+
 방법2> 
 
 Cifar100_input_size_32_pixels.zip.001 ~ Cifar100_input_size_32_pixels.zip.008의 압축을 풀면 train과 test 폴더가 생성된다.
