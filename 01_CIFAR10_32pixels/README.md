@@ -18,6 +18,10 @@ Cifar100의 모든 데이터를 JPG로 바꾸는데는 1시간 이상 소요될�
 
 python 3_cifar100_datasets_from_directory.py
 
+해당 데이터셋은 Google Drive에 저장해 놨으니 압축 파일을 받아서 사용하면 된다.
+
+https://drive.google.com/drive/folders/1jm7hM4s0GRgglhdpD6U38R6kULrIuM13?usp=sharing
+
 방법2> 
 
 Cifar100_input_size_32_pixels.zip.001 ~ Cifar100_input_size_32_pixels.zip.008의 압축을 풀면 train과 test 폴더가 생성된다.
