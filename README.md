@@ -215,3 +215,19 @@ See the folder "08_Imagenet_src". You can download full imagenet datasets.
 
 
 
+
+# Other repositories
+
+https://github.com/RichardMinsooGo-ML : This is new repository for Machine Learning.
+
+https://github.com/RichardMinsooGo-RL-Gym : This is new repository for Reinforcement Learning based on Open-AI gym.
+
+https://github.com/RichardMinsooGo-RL-Single-agent
+: This is new repository for Reinforcement Learning for Single Agent.
+
+https://github.com/RichardMinsooGo-RL-Multi-agent : This new repository is for Reinforcement Learning for Multi Agents.
+
+
+
+
+
