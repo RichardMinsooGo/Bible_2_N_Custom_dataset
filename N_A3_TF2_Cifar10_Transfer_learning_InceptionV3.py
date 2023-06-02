@@ -26,6 +26,20 @@ gdown.download(google_path+file_id,output_name,quiet=False)
 # https://drive.google.com/file/d/18I06ymkUqKwEon4Dsb8GqkJORwPZZxLd/view?usp=sharing
 
 '''
+# Cifar 100 dataset download from Auther's Github repository
+google_path = 'https://drive.google.com/uc?id='
+file_id = '1QlgaDRl1rsEd4x9V3RcT07zq7bZ96Msc'
+output_name = 'Cifar_100.zip'
+gdown.download(google_path+file_id,output_name,quiet=False)
+# https://drive.google.com/file/d/1QlgaDRl1rsEd4x9V3RcT07zq7bZ96Msc/view?usp=sharing
+
+! rm -rf sample_data
+!unzip /content/Cifar_100.zip -d /content/data
+clear_output()
+! rm /content/Cifar_100.zip
+'''
+
+'''
 D1. Import Libraries for Data Engineering
 '''
 from IPython.display import clear_output 
