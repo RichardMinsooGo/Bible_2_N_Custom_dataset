@@ -26,6 +26,20 @@ gdown.download(google_path+file_id,output_name,quiet=False)
 # https://drive.google.com/file/d/18I06ymkUqKwEon4Dsb8GqkJORwPZZxLd/view?usp=sharing
 
 '''
+# Cifar 100 dataset download from Auther's Github repository
+google_path = 'https://drive.google.com/uc?id='
+file_id = '1QlgaDRl1rsEd4x9V3RcT07zq7bZ96Msc'
+output_name = 'Cifar_100.zip'
+gdown.download(google_path+file_id,output_name,quiet=False)
+# https://drive.google.com/file/d/1QlgaDRl1rsEd4x9V3RcT07zq7bZ96Msc/view?usp=sharing
+
+! rm -rf sample_data
+!unzip /content/Cifar_100.zip -d /content/data
+clear_output()
+! rm /content/Cifar_100.zip
+'''
+
+'''
 D1. Import Libraries for Data Engineering
 '''
 from IPython.display import clear_output 
@@ -300,19 +314,4 @@ with tqdm_notebook(total=VAL_STEPS, desc=f"Test_ Epoch {epoch+1}") as pbar:
 M10. Save Model
 '''
 model.save_weights(model_name+'.h5', overwrite=True)
-
-'''
-M11. Sample outputs from validation set
-'''
-LABELS_LIST = "airplane automobile bird cat deer dog frog horse ship truck".split(" ")
-
-n_sample = 8
-x_batch_val, y_batch_val = getBatch(n_sample, "val")
-
-for i in range(n_sample):
-    import numpy as np
-    plt.imshow(x_batch_val[i])
-    plt.show()
-    print("pred: " + LABELS_LIST[np.argmax(model.predict(x_batch_val[i:i+1]))])
-    print("acct: " + LABELS_LIST[np.argmax(y_batch_val[i])])
 
